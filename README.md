@@ -1,3 +1,6 @@
+# ESP32VU-meter
+line audio VU meter based on esp-idf
+
 **Build label:** `261003.113745`
 
 # ESP32 VU Meter (ESP-IDF)
