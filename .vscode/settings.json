@@ -1,0 +1,16 @@
+{
+  "idf.flashBaudRate": "921600",
+  "idf.monitorBaudRate": "921600",
+  "idf.port": "/dev/ttyACM0",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.path": "/home/wim/.espressif/tools/esp-clangd/esp-21.1.3_20260408/esp-clangd/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--compile-commands-dir=${workspaceFolder}/build",
+    "--query-driver=/home/wim/.espressif/tools/xtensa-esp-elf/**/xtensa-esp*-elf-*"
+  ],
+  "idf.currentSetup": "/home/wim/.espressif/v6.1/esp-idf"
+}

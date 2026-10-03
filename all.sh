@@ -77,4 +77,4 @@ if [[ -f "$BUILD_INFO" ]]; then
     --header "${BUILD_INFO}" --resync-stamps || true
 fi
 
-idf.py -p "$PORT" -b "$ESPBAUD" flash monitor
+#idf.py -p "$PORT" -b "$ESPBAUD" flash monitor

@@ -1,0 +1,14 @@
+# Espressif clangd for ESP-IDF:
+# - Use compile_commands from the IDF build tree
+# - Drop GCC-only -f/-m flags clang doesn't understand
+# - Point at esp-clang resource-dir (esp-clangd omits builtin headers like float.h)
+CompileFlags:
+  CompilationDatabase: build
+  Remove: [-f*, -m*]
+  Add:
+    - -resource-dir=/home/wim/.espressif/tools/esp-clang/esp-21.1.3_20260408/esp-clang/lib/clang/21
+
+Diagnostics:
+  Suppress:
+    - drv_unknown_argument
+    - drv_unknown_argument_with_suggestion
